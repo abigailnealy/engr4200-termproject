@@ -1,0 +1,17 @@
+rack_pinion_controller:
+  ros__parameters:
+    motor:
+      max_speed: 1.0
+      default_speed: 0.6
+
+    positions:
+      pickup_height: 0.0     # TODO: replace with real units 
+      carry_height: 0.5
+      dropoff_height: 0.1
+
+    timeouts:
+      move_timeout_sec: 8.0
+
+    serial:
+      port: "/dev/ttyACM0"   # adjust to actual Arduino device, e.g. /dev/ttyUSB0
+      baud: 115200

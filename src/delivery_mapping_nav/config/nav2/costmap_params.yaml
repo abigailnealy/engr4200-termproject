@@ -1,0 +1,7 @@
+global_costmap:
+  ros__parameters:
+    use_sim_time: false
+
+local_costmap:
+  ros__parameters:
+    use_sim_time: false

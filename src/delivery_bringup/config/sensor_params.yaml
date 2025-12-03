@@ -1,0 +1,13 @@
+# Generic sensor parameter placeholders.
+# Fill these in based on your actual drivers and topics.
+
+sensors:
+  lidar:
+    topic: "/scan"
+    frame_id: "laser_frame"
+  camera_rgbd:
+    color_topic: "/camera/color/image_raw"
+    depth_topic: "/camera/depth/image_rect_raw"
+    info_topic: "/camera/camera_info"
+  imu:
+    topic: "/imu/data"

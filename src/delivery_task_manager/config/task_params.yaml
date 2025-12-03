@@ -1,0 +1,12 @@
+task_manager_node:
+  ros__parameters:
+    scan_timeout: 10.0
+    nav_retry_limit: 3
+    wait_at_dropoff_sec: 5.0
+
+    manipulator:
+      use_service_api: true    # true => use SetLiftState, false => /lift_cmd topic
+      pickup_height_state: "AT_PICKUP_HEIGHT"
+      carry_height_state: "AT_CARRY_HEIGHT"
+      dropoff_height_state: "AT_DROPOFF_HEIGHT"
+      lift_move_timeout_sec: 8.0

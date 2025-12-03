@@ -1,0 +1,5 @@
+bool trigger
+---
+string dropoff_id
+bool success
+string message

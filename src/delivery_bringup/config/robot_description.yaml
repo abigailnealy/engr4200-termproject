@@ -1,0 +1,8 @@
+# Robot description parameters for Turtlebot4 / TB4-like base.
+# You can replace this with URDF or xacro related parameters if needed.
+
+robot_description_package: "turtlebot4_description"
+robot_description_file: "turtlebot4.urdf.xacro"
+
+# Example namespace if you use one:
+robot_namespace: "tb4"
