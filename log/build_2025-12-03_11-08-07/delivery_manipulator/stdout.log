@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating delivery_manipulator.egg-info
+writing delivery_manipulator.egg-info/PKG-INFO
+writing dependency_links to delivery_manipulator.egg-info/dependency_links.txt
+writing entry points to delivery_manipulator.egg-info/entry_points.txt
+writing requirements to delivery_manipulator.egg-info/requires.txt
+writing top-level names to delivery_manipulator.egg-info/top_level.txt
+writing manifest file 'delivery_manipulator.egg-info/SOURCES.txt'
+reading manifest file 'delivery_manipulator.egg-info/SOURCES.txt'
+writing manifest file 'delivery_manipulator.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yoga7i/engr4200-termproject/install/delivery_manipulator/lib/python3.12/site-packages/delivery-manipulator.egg-link (link to .)
+Installing rack_pinion_controller script to /home/yoga7i/engr4200-termproject/install/delivery_manipulator/lib/delivery_manipulator
+
+Installed /home/yoga7i/engr4200-termproject/build/delivery_manipulator
+running symlink_data
+creating /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/ament_index
+creating /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/ament_index/resource_index
+creating /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/ament_index/resource_index/packages
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_manipulator/resource/delivery_manipulator -> /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/ament_index/resource_index/packages
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_manipulator/package.xml -> /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/delivery_manipulator
+creating /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/delivery_manipulator/launch
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_manipulator/launch/rack_pinion.launch.py -> /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/delivery_manipulator/launch
+creating /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/delivery_manipulator/config
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_manipulator/config/rack_pinion.params.yaml -> /home/yoga7i/engr4200-termproject/install/delivery_manipulator/share/delivery_manipulator/config

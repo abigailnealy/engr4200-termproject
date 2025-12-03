@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from delivery_interfaces/srv/ScanPackage.srv
+// generated code does not contain a copyright notice
+
+
+module delivery_interfaces {
+  module srv {
+    struct ScanPackage_Request {
+      boolean trigger;
+    };
+    struct ScanPackage_Response {
+      string dropoff_id;
+
+      boolean success;
+
+      string message;
+    };
+  };
+};

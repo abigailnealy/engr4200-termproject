@@ -1,0 +1,31 @@
+running develop
+running egg_info
+creating delivery_mapping_nav.egg-info
+writing delivery_mapping_nav.egg-info/PKG-INFO
+writing dependency_links to delivery_mapping_nav.egg-info/dependency_links.txt
+writing entry points to delivery_mapping_nav.egg-info/entry_points.txt
+writing requirements to delivery_mapping_nav.egg-info/requires.txt
+writing top-level names to delivery_mapping_nav.egg-info/top_level.txt
+writing manifest file 'delivery_mapping_nav.egg-info/SOURCES.txt'
+reading manifest file 'delivery_mapping_nav.egg-info/SOURCES.txt'
+writing manifest file 'delivery_mapping_nav.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/lib/python3.12/site-packages/delivery-mapping-nav.egg-link (link to .)
+Installing nav_manager script to /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/lib/delivery_mapping_nav
+
+Installed /home/yoga7i/engr4200-termproject/build/delivery_mapping_nav
+running symlink_data
+creating /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/ament_index
+creating /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/ament_index/resource_index
+creating /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/ament_index/resource_index/packages
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_mapping_nav/resource/delivery_mapping_nav -> /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/ament_index/resource_index/packages
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_mapping_nav/package.xml -> /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav
+creating /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/launch
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_mapping_nav/launch/mapping.launch.py -> /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/launch
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_mapping_nav/launch/nav.launch.py -> /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/launch
+creating /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/config
+creating /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/config/slam_toolbox
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_mapping_nav/config/slam_toolbox/mapping.yaml -> /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/config/slam_toolbox
+creating /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/config/nav2
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_mapping_nav/config/nav2/nav2_params.yaml -> /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/config/nav2
+symbolically linking /home/yoga7i/engr4200-termproject/build/delivery_mapping_nav/config/nav2/costmap_params.yaml -> /home/yoga7i/engr4200-termproject/install/delivery_mapping_nav/share/delivery_mapping_nav/config/nav2

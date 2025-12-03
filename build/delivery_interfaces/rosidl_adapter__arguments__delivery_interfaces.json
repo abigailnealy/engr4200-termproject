@@ -1,0 +1,7 @@
+{
+  "package_name": "delivery_interfaces",
+  "non_idl_tuples": [
+    "/home/yoga7i/engr4200-termproject/src/delivery_interfaces:srv/ScanPackage.srv",
+    "/home/yoga7i/engr4200-termproject/src/delivery_interfaces:srv/SetLiftState.srv"
+  ]
+}

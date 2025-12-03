@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/delivery_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/delivery_interfaces/srv/detail/dds_fastrtps/scan_package__type_support.cpp.o"
+  "CMakeFiles/delivery_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/delivery_interfaces/srv/detail/dds_fastrtps/scan_package__type_support.cpp.o.d"
+  "CMakeFiles/delivery_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/delivery_interfaces/srv/detail/dds_fastrtps/set_lift_state__type_support.cpp.o"
+  "CMakeFiles/delivery_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/delivery_interfaces/srv/detail/dds_fastrtps/set_lift_state__type_support.cpp.o.d"
+  "libdelivery_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libdelivery_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/delivery_interfaces/srv/detail/dds_fastrtps/scan_package__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/delivery_interfaces/srv/detail/dds_fastrtps/set_lift_state__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/delivery_interfaces/srv/detail/scan_package__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/delivery_interfaces/srv/detail/set_lift_state__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/delivery_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

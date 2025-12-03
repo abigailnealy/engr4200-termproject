@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/yoga7i/engr4200-termproject/build/delivery_interfaces/rosidl_generator_py/delivery_interfaces/delivery_interfaces_s__rosidl_typesupport_c.so" "TARGETS" "delivery_interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/delivery_interfaces")

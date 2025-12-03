@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "delivery_interfaces__py",
+		"source" : "/home/yoga7i/engr4200-termproject/build/delivery_interfaces/delivery_interfaces__py"
+	}
+}

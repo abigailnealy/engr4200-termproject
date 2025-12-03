@@ -1,0 +1,9 @@
+source;share/delivery_task_manager/hook/pythonpath.ps1
+source;share/delivery_task_manager/hook/pythonpath.dsv
+source;share/delivery_task_manager/hook/pythonpath.sh
+source;share/delivery_task_manager/hook/ament_prefix_path.ps1
+source;share/delivery_task_manager/hook/ament_prefix_path.dsv
+source;share/delivery_task_manager/hook/ament_prefix_path.sh
+source;../../build/delivery_task_manager/share/delivery_task_manager/hook/pythonpath_develop.ps1
+source;../../build/delivery_task_manager/share/delivery_task_manager/hook/pythonpath_develop.dsv
+source;../../build/delivery_task_manager/share/delivery_task_manager/hook/pythonpath_develop.sh

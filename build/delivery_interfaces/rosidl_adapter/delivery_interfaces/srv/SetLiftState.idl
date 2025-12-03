@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from delivery_interfaces/srv/SetLiftState.srv
+// generated code does not contain a copyright notice
+
+
+module delivery_interfaces {
+  module srv {
+    struct SetLiftState_Request {
+      @verbatim (language="comment", text=
+        "e.g. \"PICKUP_HEIGHT\", \"CARRY_HEIGHT\", \"DROPOFF_HEIGHT\"")
+      string target_state;
+    };
+    struct SetLiftState_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

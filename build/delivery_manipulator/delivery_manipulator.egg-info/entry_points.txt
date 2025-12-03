@@ -1,0 +1,2 @@
+[console_scripts]
+rack_pinion_controller = delivery_manipulator.rack_pinion_controller:main

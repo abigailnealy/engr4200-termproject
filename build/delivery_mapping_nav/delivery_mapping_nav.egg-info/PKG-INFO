@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: delivery-mapping-nav
+Version: 0.0.0
+Summary: Mapping (SLAM) and Nav2 bringup for delivery project
+Maintainer: yoga7i
+Maintainer-email: anealy3@lsu.edu
+License: TODO

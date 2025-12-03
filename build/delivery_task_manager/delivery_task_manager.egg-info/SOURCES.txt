@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+config/locations.yaml
+config/task_params.yaml
+delivery_task_manager/__init__.py
+delivery_task_manager/task_manager_node.py
+delivery_task_manager.egg-info/PKG-INFO
+delivery_task_manager.egg-info/SOURCES.txt
+delivery_task_manager.egg-info/dependency_links.txt
+delivery_task_manager.egg-info/entry_points.txt
+delivery_task_manager.egg-info/requires.txt
+delivery_task_manager.egg-info/top_level.txt
+delivery_task_manager.egg-info/zip-safe
+launch/task_manager.launch.py
+resource/delivery_task_manager

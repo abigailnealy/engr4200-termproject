@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "delivery_interfaces/srv/ScanPackage_Request",
+      "fields": [
+        {
+          "name": "trigger",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "delivery_interfaces/srv/ScanPackage_Request",
+      "hash_string": "RIHS01_d7a3301af677868962b131d95d6ad1dfbe3037b5b13196ee3198f227e7725442"
+    }
+  ]
+}

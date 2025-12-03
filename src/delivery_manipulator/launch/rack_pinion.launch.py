@@ -11,12 +11,14 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description() -> LaunchDescription:
     pkg_share = get_package_share_directory("delivery_manipulator")
 
+    # Default parameter file
     default_params = os.path.join(
         pkg_share,
         "config",
         "rack_pinion.params.yaml",
     )
 
+    # Allow user to override params file
     params_arg = DeclareLaunchArgument(
         "params_file",
         default_value=default_params,
@@ -29,6 +31,7 @@ def generate_launch_description() -> LaunchDescription:
         description="Use simulation time if true",
     )
 
+    # Rack-and-pinion controller node
     controller_node = Node(
         package="delivery_manipulator",
         executable="rack_pinion_controller",

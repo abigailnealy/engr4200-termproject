@@ -1,0 +1,2 @@
+[console_scripts]
+task_manager_node = delivery_task_manager.task_manager_node:main
