@@ -10,12 +10,6 @@ from .tag_detector import TagDetector
 
 
 class ScannerNode(Node):
-    """Scanner node that exposes the ScanPackage service.
-
-    Camera stream runs continuously. When /scan_package is called with
-    trigger=True, we attempt to detect a QR/AprilTag in the latest frame
-    and return a symbolic dropoff_id like "DROP1".
-    """
 
     def __init__(self) -> None:
         super().__init__("scanner_node")

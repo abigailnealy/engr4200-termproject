@@ -3,12 +3,6 @@ from rclpy.node import Node
 
 
 class NavManager(Node):
-    """Minimal navigation manager node.
-
-    This node doesn't control Nav2 directly yet; Nav2 is brought up via
-    the nav.launch.py file in this package. Later you can extend this node
-    to provide services that wrap Nav2 actions or utilities.
-    """
 
     def __init__(self) -> None:
         super().__init__("nav_manager")

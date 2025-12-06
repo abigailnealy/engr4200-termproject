@@ -1,5 +1,4 @@
-# Generic sensor parameter placeholders.
-# Fill these in based on your actual drivers and topics.
+# Generic sensor parameter placeholders
 
 sensors:
   lidar:

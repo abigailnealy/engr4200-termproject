@@ -11,7 +11,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description() -> LaunchDescription:
     # -------------------------------
-    # TB4 real bringup (if available)
+    # TB4 real bringup
     # -------------------------------
     tb4_actions = []
     try:
@@ -27,11 +27,11 @@ def generate_launch_description() -> LaunchDescription:
             )
         )
     except Exception:
-        # If TB4 packages aren't installed, we just skip this include.
+        # If TB4 packages aren't installed, skip.
         tb4_actions = []
 
     # -------------------------------
-    # Mapping / Nav2 bringup (auto-switch)
+    # Mapping / Nav2 bringup
     # -------------------------------
     mapping_nav_share = get_package_share_directory("delivery_mapping_nav")
 
@@ -47,10 +47,8 @@ def generate_launch_description() -> LaunchDescription:
         "mapping.launch.py",
     )
 
-    # Path to your GitHub repo root
     repo_root = os.path.expanduser("~/engr4200-termproject")
 
-    # Full path to the map file inside the repo
     map_file_path = os.path.join(repo_root, "maps", "lab_map.yaml")
 
     map_exists = os.path.exists(map_file_path)
@@ -143,7 +141,6 @@ def generate_launch_description() -> LaunchDescription:
     # Optionally TB4 base + sensors
     actions.extend(tb4_actions)
 
-    # Either SLAM mapping or Nav2, depending on map existence
     actions.append(nav_or_mapping_include)
 
     if map_exists:

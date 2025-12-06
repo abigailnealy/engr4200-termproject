@@ -10,7 +10,7 @@ slam_toolbox:
     # Basic SLAM mode
     mode: "mapping"
 
-    # Example parameters – tune or extend as needed
+    # Example parameters
     resolution: 0.05
     publish_period: 1.0
     max_laser_range: 20.0

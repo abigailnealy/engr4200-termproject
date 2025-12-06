@@ -18,25 +18,13 @@ STATE_AT_CARRY = "AT_CARRY_HEIGHT"
 STATE_AT_DROPOFF = "AT_DROPOFF_HEIGHT"
 STATE_ERROR = "ERROR"
 
-# Allowed SetLiftState.target_state values we accept
+# Allowed SetLiftState.target_state values accepted
 TARGET_PICKUP = "PICKUP_HEIGHT"
 TARGET_CARRY = "CARRY_HEIGHT"
 TARGET_DROPOFF = "DROPOFF_HEIGHT"
 
 
 class RackPinionController(Node):
-    """High-level controller for the rack & pinion lift.
-
-    - /lift_cmd (topic) accepts string commands like:
-        "LOWER_FOR_PICKUP", "RAISE_FOR_CARRY", "LOWER_FOR_DROPOFF", "STOP"
-    - /lift_state (topic) publishes state strings:
-        "IDLE", "MOVING", "AT_PICKUP_HEIGHT", "AT_CARRY_HEIGHT",
-        "AT_DROPOFF_HEIGHT", "ERROR"
-    - /set_lift_state (service) accepts a target_state:
-        "PICKUP_HEIGHT", "CARRY_HEIGHT", "DROPOFF_HEIGHT"
-      and returns success/message (fire-and-forget: success means
-      "command accepted", not "motion completed").
-    """
 
     def __init__(self) -> None:
         super().__init__("rack_pinion_controller")
@@ -46,7 +34,6 @@ class RackPinionController(Node):
         self.declare_parameter("motor.default_speed", 0.6)
         self.declare_parameter("timeouts.move_timeout_sec", 8.0)
 
-        # Serial link to Arduino (for VEX Motor Controller 29 + lift motor)
         # These are configured in rack_pinion.params.yaml
         self.declare_parameter("serial.port", "/dev/ttyACM0")
         self.declare_parameter("serial.baud", 115200)
@@ -62,7 +49,7 @@ class RackPinionController(Node):
         self._target_state: Optional[str] = None
         self._motion_start_time: Optional[rclpy.time.Time] = None
 
-        # Hardware interface (now real serial-based interface)
+        # Hardware interface
         self._hw = RackPinionHardwareInterface(self)
         if not self._hw.initialize():
             self.get_logger().error("Failed to initialize hardware interface.")
@@ -111,7 +98,7 @@ class RackPinionController(Node):
         self._current_state = STATE_MOVING
         self._motion_start_time = self.get_clock().now()
 
-        # Command hardware (stub)
+        # Command hardware
         if not self._hw.command_motion(logical_target):
             self.get_logger().error("Hardware command_motion failed.")
             self._current_state = STATE_ERROR
@@ -135,9 +122,9 @@ class RackPinionController(Node):
             self._target_state = None
             return
 
-        # For now, simulate that the motion completes quickly (e.g. after 1.0 sec)
+        
         if elapsed > Duration(seconds=1.0):
-            # Map logical target to published state string
+           
             if self._target_state == TARGET_PICKUP:
                 self._current_state = STATE_AT_PICKUP
             elif self._target_state == TARGET_CARRY:
@@ -200,7 +187,6 @@ class RackPinionController(Node):
             return response
 
         self.start_motion_towards(target)
-        # Fire-and-forget semantics: success here means "command accepted"
         response.success = True
         response.message = f"Command accepted to move to {target}."
         return response

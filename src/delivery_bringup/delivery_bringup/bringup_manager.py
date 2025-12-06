@@ -3,11 +3,6 @@ from rclpy.node import Node
 
 
 class BringupManager(Node):
-    """Minimal bringup manager node.
-
-    For now this just logs that it's running. Later, if you want,
-    you can add services or parameters to coordinate startup/shutdown.
-    """
 
     def __init__(self) -> None:
         super().__init__("bringup_manager")

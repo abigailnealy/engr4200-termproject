@@ -9,18 +9,6 @@ except ImportError:
 
 
 class RackPinionHardwareInterface:
-    """Hardware interface for the rack & pinion lift via Arduino + VEX MC29.
-
-    Protocol (very simple, line-based, 1-byte commands):
-
-      'P' -> move to PICKUP height
-      'C' -> move to CARRY height
-      'D' -> move to DROPOFF height
-      'S' -> stop (optional / mostly a no-op for a position servo)
-
-    The Arduino sketch implements these commands and moves the VEX motor
-    to the appropriate positions using Servo.writeMicroseconds().
-    """
 
     def __init__(self, node: Node) -> None:
         self._node = node
@@ -137,16 +125,5 @@ class RackPinionHardwareInterface:
         self._node.get_logger().warn(
             "RackPinionHardwareInterface: STOP command."
         )
-        # For a true servo, 'stop' doesn't really make sense; the servo
-        # holds its last position. You *could* detach in the Arduino
-        # code if you really want to.
+      
         self._send_command("S")
-
-    def read_state(self) -> Optional[str]:
-        """Return a hardware-derived state string, or None if unknown.
-
-        For now we let the controller node manage software state, so this is
-        just a placeholder. If later you add limit switches or an encoder,
-        you can have the Arduino report back over serial and parse it here.
-        """
-        return None

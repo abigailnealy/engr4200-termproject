@@ -9,7 +9,6 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
-# Generate all interfaces here (we'll add more later like SetLiftState.srv)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ScanPackage.srv"
   "srv/SetLiftState.srv"

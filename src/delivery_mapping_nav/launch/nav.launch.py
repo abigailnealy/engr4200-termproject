@@ -42,9 +42,9 @@ def generate_launch_description() -> LaunchDescription:
     params_file = LaunchConfiguration("params_file")
     map_yaml = LaunchConfiguration("map")
 
-    # ---- Nav2 nodes (no nav2_route, no nav2_bringup) ----
+    # ---- Nav2 nodes ----
 
-    # Map server (optional if running pure SLAM; here we support map-based nav)
+    # Map server 
     map_server_node = Node(
         package="nav2_map_server",
         executable="map_server",
